@@ -12,3 +12,7 @@
 
 开发工具
 vscode
+
+ctrl+N
+ctrl+S
+使用vs创建html文件 使用html:5 创建  这里右键没有alt+B 需要  在 vscode  里下载一个名叫openin browser的插件
