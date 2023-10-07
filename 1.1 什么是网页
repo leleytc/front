@@ -34,3 +34,33 @@ W3c标准有哪些
 结构写到html文件中。表现写到CSS文件中，行为写道JavaScript文件中
 
 结构最重要
+
+3.1文档声明标签
+<!DOCTYPE> 文档类型声明，告诉浏览器哪种HTML版本来显示网页
+<!DOCTYPE html> 告诉浏览器当前页面采取的是HTML5版本来显示网页
+一定写在第一行，不是html标签，他是文档声明标签
+3.2当前文档显示语言 en 英语 zh-CN定义为中文  en英文网页，zh-CN中文网页
+<html lang="en"> fr 法文
+
+<meta charset="UTF-8">  UTF-8万国码 字符集
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"> 暂不介绍
+
+3.4 总结 
+<!DOCTYPE html>  
+<html lang="en">
+<meta charset="UTF-8">
+
+4.html常用标签
+标题标签
+<h1> -<h6>
+<h1> 我是一级标题</h1> head缩写，以为头部
+重要性
+特点
+  加粗
+  每个标题独占一行
+
+段落标签
+<p>  </p> 
+换行标签 <br /> break
+
+
