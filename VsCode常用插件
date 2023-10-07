@@ -1,0 +1,18 @@
+1.Chinese
+2.aotu rename tag
+3.one dark pro
+4.格式化代码 用vscode自带的就行
+5.open in browser
+6.live Server   实施预览 保证有一个目录 这个比较重要
+7.vscode-icons
+8.easyless 把less文件自动转化为css文件
+9.会了吧
+
+vs常用快捷键  shift alt +下箭头 快速复制一行
+选定的哥相同的单词ctrl+d
+添加多个光标 ctrl alt+下箭头or 上箭头
+全局替换单词 ctrl+h
+快速替换到某一行 ctrl+g 40 跳到第40行
+选某一区块 shift+alt+鼠标光标
+crlt++ ctrl+-
+ctrl+/  ctrl+alt+A 注释 还可以修改快捷键
