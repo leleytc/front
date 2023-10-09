@@ -115,3 +115,45 @@ border 设置图像的边框粗细 border一般设定css的时候制定 颜色�
              属性之间不分先后顺序，属性与属性之间用空格分开
 	     属性采取键值对的格式 key = "value" 
 e.g. <img src="申.jpg" alt="我是pigsese" title="我是申真谞思密达" width="500" border="15" />
+
+2.路径
+相对路径，绝对路径
+相对路径
+同一级路径 <img src = "img.jpg" / >    ./   
+下一级路径 <img src = "images/img.jpg" / >  /
+上一级路径 <img src = "../img.jpg" / >   ../
+
+绝对路径 
+<img src="C:\Users\yskm\Desktop\前端学习\html\img.jpg" />
+\\
+<img src="https://www.itcast.cn/2018czgw/images/logo2.png">
+
+4.7 超链接标签
+从当前页面到下一个页面
+语法格式
+<a href = "跳转目标" target = "目标窗口的弹出方式"> 文本或图像</a>  a标签一对
+href 用于指定连接目标的url地址 必须属性
+target 用于指定连接页面的打开方式 其中。_self为默认值，_blank为在新窗口中打开方式
+4.8路径
+目录文件夹和根目录
+Vscode 打开目录文件夹，还可以直接拽进来？？？？？？？？？？？？？？？？？
+直接在文件夹里新建文件就可以了 右键可删除 
+
+4.9超链接标签(重点)
+2.链接分类
+2.1外部链接 
+<a href="http://www.qq.com"> 腾讯</a>
+<a> 传智播客</a> 然后在a后面写href target href 一定要加http://
+2.2内部链接 网站内部之间的相互连接 
+内部链接 <a href = "index.html"> 公司简介</a>
+2.3空链接 <a herf = "#"> 公司地址 </a>    
+2.4下载链接  <a href="img.zip">下载文件</a>    .exe 或者是 zip等压缩包形式
+2.5网页元素的链接 可以用照片等来做超链接的跳转
+<a href="http://www.baidu.com">   <img src="img.jpg">   </a>
+2.6锚点链接 快速定位到页面中的某个位置
+有一个定位 <a href = "#live"> 个人生活 </a>
+有一个目标位置标签 <h3 id = "live"> 个人生活 </h3>
+现在做一个返回顶部的标签
+
+5.HTML中的注释和特殊字符
+5.1注释
