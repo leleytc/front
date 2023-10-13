@@ -113,12 +113,18 @@ dt和dd是兄弟关系
 3.textarea文本域元素
 <input type="属性值" />标签里有一个type属性，根据不同的type属性值
 <input为单标签>
+
+3.4.1.input
 type属性设置不同的属性值用来指定不同的控件类型
-type
+type对应value
 test 文本 20个字符
 password 密码
 radio 单选按钮
 checkbox 复选框
+submit 提交按钮
+reset 重置按钮
+button 按钮，做某件事的，通过JS启动脚本
+file上传文件使用的
 
 除type属性外 input标签还有很多属性：
 name  定义input元素的名称
@@ -132,3 +138,6 @@ maxlenghth 规定字符中的最大长度
 
 <input type="text" name="username" value="请输入用户名" maxlength="6">
 
+红色 标签，屎黄色 属性，绿色，值
+
+3.4.2select下拉表单元素
