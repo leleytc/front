@@ -69,3 +69,66 @@ align border cellpadding cellspacing width
 ul中只能嵌套li
 li与li之间相当于一个容器，可以容纳所有元素
 无序列表会带有自己的属性。我们会使用css来设置
+
+
+有序列表
+<ol>
+  <li></li>
+  <li></li>
+</ol>
+ol中只能嵌套li
+li与li之间相当于一个容器，可以容纳所有元素
+无序列表会带有自己的属性。我们会使用css来设置
+
+自定义列表(重点)
+大哥
+配小弟
+
+语法格式:
+<dl>
+  <dt> </dt>
+  <dd> </dd>
+  <dd> </dt>
+</dl>
+只能这两个标签
+
+dt和dd是兄弟关系
+列表
+<ul> <li>
+<ol> <li>
+<dl> <dt> <dd>
+
+3.表单标签
+收集用户信息
+表单域、表单控件、提示信息
+表单域 
+<form> 标签用于定义表单域，以实现用户信息的收集和传递
+<form> 会把它范围内的表单元素提交给服务器 
+<form action="url地址" method="提示方式" name="表单域名称“>
+</form>
+
+3.4 表单控件
+1.input输入表单元素 <input>用来输入文字信息
+2.select下拉表单元素
+3.textarea文本域元素
+<input type="属性值" />标签里有一个type属性，根据不同的type属性值
+<input为单标签>
+type属性设置不同的属性值用来指定不同的控件类型
+type
+test 文本 20个字符
+password 密码
+radio 单选按钮
+checkbox 复选框
+
+除type属性外 input标签还有很多属性：
+name  定义input元素的名称
+value 规定input元素的值
+value 传送到后台的值
+name和value主要给后台人员使用
+单选按钮和复选框都要有相同的name值
+checked 规定此input元素首次加载的
+checked主要针对单选按钮和复选框 
+maxlenghth 规定字符中的最大长度
+
+<input type="text" name="username" value="请输入用户名" maxlength="6">
+
