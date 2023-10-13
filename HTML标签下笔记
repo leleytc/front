@@ -10,29 +10,27 @@
 
 1.表格标签 
 开发中非常常用的标签 
-1.1表格的主要作用
+1.1 表格的主要作用
   显示、展示数据，显示数据整齐
-1.2表格的基本语法
+1.2 语法:
 <table>
   <tr>
     <td> </td>
   </tr>
 </table>
-<table> </table> 1、用于定义表格的标签
-<tr> </tr> 行
-<td> </td> 单元格
+<table></table>   用于定义表格的标签
+<tr></tr>  行
+<td></td> 单元格
 1.3 表头单元格
-<th>表示表头 </th>  表头单元格也是单元格，常用于表格第一行，突出重要性
-1.4 表格属性 可以设置边框 后面使用CSS设置 记住这些单词
+<th></th>  表头单元格也是单元格，常用于表格第一行，突出重要性
+1.4 表格属性 可以设置边框 后面使用CSS设置 放在table标签里
 aligh ="center" boreder = 1或 "" cellpadding = "20" 像素值 规定单元格与其内容的边缘
 cellspacing = 0 规定单元格之间的空白。默认2像素
-
 1.5表格结构标签
 使用场景。 表格分为表格头部和表格主题两个部分
 <thead>标签 表格的头部  <tbody>表格的主体部分
 thead内部必须拥有<tr>标签，一般位于第一行
 <tbody> 用于定义表格的主题，
-
 1.6合并单元格
 个人简历 
 跨行合并 rowspan="合并单元格的个数"
@@ -44,23 +42,11 @@ thead内部必须拥有<tr>标签，一般位于第一行
 1.先确定跨行还是跨列合并
 2.找到目标单元格 写 <td colspan="2"> </td>
 3.删除多余的单元格
-
-表格 
-表格的相关标签 table tr td th
-thead tbody
-表格的相关属性
-align border cellpadding cellspacing width
-合并单元格
-跨行合并 rowspan="合并单元格的个数"
-跨列合并 colspan="合并单元格的列数"
-
-列表标签
-列表用来布局的
-整齐，有序，方便 
-
-无序列表 （重点）  通过ul来定义
-有序列表  
-自定义列表
+ 
+2.列表标签
+用处：列表用来布局的 整齐，有序，方便 
+2.3自定义列表
+2.1无序列表
 <ul>
   <li></li>
   <li></li>
@@ -69,9 +55,7 @@ align border cellpadding cellspacing width
 ul中只能嵌套li
 li与li之间相当于一个容器，可以容纳所有元素
 无序列表会带有自己的属性。我们会使用css来设置
-
-
-有序列表
+2.2有序列表
 <ol>
   <li></li>
   <li></li>
@@ -79,45 +63,37 @@ li与li之间相当于一个容器，可以容纳所有元素
 ol中只能嵌套li
 li与li之间相当于一个容器，可以容纳所有元素
 无序列表会带有自己的属性。我们会使用css来设置
-
-自定义列表(重点)
+2.3自定义列表(重点)
 大哥
 配小弟
-
 语法格式:
 <dl>
   <dt> </dt>
   <dd> </dd>
-  <dd> </dt>
+  <dd> </dd>
 </dl>
-只能这两个标签
-
+dl里只能这两个标签 dd和dt
 dt和dd是兄弟关系
-列表
-<ul> <li>
-<ol> <li>
-<dl> <dt> <dd>
 
 3.表单标签
 收集用户信息
 表单域、表单控件、提示信息
-表单域 
+3.1表单域 
 <form> 标签用于定义表单域，以实现用户信息的收集和传递
 <form> 会把它范围内的表单元素提交给服务器 
 <form action="url地址" method="提示方式" name="表单域名称“>
 </form>
-
+url 用户天后上传到的地址，method get和post name 用户的名字
 3.4 表单控件
 1.input输入表单元素 <input>用来输入文字信息
 2.select下拉表单元素
 3.textarea文本域元素
 <input type="属性值" />标签里有一个type属性，根据不同的type属性值
 <input为单标签>
-
-3.4.1.input
-type属性设置不同的属性值用来指定不同的控件类型
-type对应value
-test 文本 20个字符
+3.4.1.input  
+3.4.1.1type属性设置不同的属性值用来指定不同的控件类型
+type：
+test 文本 
 password 密码
 radio 单选按钮
 checkbox 复选框
@@ -126,7 +102,7 @@ reset 重置按钮
 button 按钮，做某件事的，通过JS启动脚本
 file上传文件使用的
 
-除type属性外 input标签还有很多属性：
+3.4.1.2 除type属性外 input标签还有很多属性：
 name  定义input元素的名称
 value 规定input元素的值
 value 传送到后台的值
@@ -140,8 +116,8 @@ maxlenghth 规定字符中的最大长度
 
 红色 标签，屎黄色 属性，绿色，值
 
-3.4.2label标签
-点击label标签娘ewfbfui，浏览器自动打勾 
+3.4.2 label标签
+点击label标签，浏览器自动打勾 
 <label for "sex">男</label>
 <input type="radio" name = "sex" id="sex"/>
 
