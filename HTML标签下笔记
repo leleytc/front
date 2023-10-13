@@ -140,4 +140,23 @@ maxlenghth 规定字符中的最大长度
 
 红色 标签，屎黄色 属性，绿色，值
 
-3.4.2select下拉表单元素
+3.4.2label标签
+点击label标签娘ewfbfui，浏览器自动打勾 
+<label for "sex">男</label>
+<input type="radio" name = "sex" id="sex"/>
+
+3.4.3select下拉表单元素
+语法:
+<select> 
+  <option> <option/>
+</select>
+至少一对option
+如果写selected="selected"则默认这个
+
+3.4.4 textarea文本域元素
+使用场景:可以写好几行
+grammer:
+<textarea>你好 
+</textarea>
+参数 cols="" rows = "" 不用回这两，都是通过css确定
+
