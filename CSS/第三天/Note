@@ -86,4 +86,86 @@ px
 谷歌默认16px 给以给body指定整个页面文字的大小
 
 3.3 字体粗细
-font-weight normal bold 
+font-weight normal bold  100-900
+
+3.4 文字样式
+   CSS使用font-style属性设置文本的风格
+属性略呈 normal 正常  
+3.5 字体复合属性
+ /* font: font-style font-weight font-size/line-weight font-family; */
+            font: italic 700 16px/20px "Microsoft yahei";
+不能颠倒顺序，空格隔开，不想要可以省略，必须要有font-size和font-family属性
+
+3.6 总结 font-size 字号 font-family 字体 font-weight 粗细 700 400 font-style 字体样式 font  字体连写
+第一 复合属性 
+4 CSS文本属性
+   文本的外观，比如文本的颜色，对其，装饰，文本缩进，行间距等。
+4.1   文本颜色 color
+div{color: red;}
+预定义颜色值
+16 进制 color: #ff0000;
+rgb
+开发中最常用的是十六进制
+4.2 对齐文本
+text-align center left right
+4.3 装饰文本
+text-decoration  下划线，删除线，上划线
+默认none underline 下划线  overline 上划线line-through 删除线 设置下划线和删除下划线即可
+4.4 文本缩进
+text-indent 指定文本的第一行的缩进，通常是将段落的首行缩进
+div{
+   text-indet:4px
+}
+1em=16px 1em 是一个汉字的距离，相对于当前的元素来说的
+em是相对单位
+4.5 行间距 控制文字行与行间的距离 行高
+p{
+line-height:26px;
+}
+行间距=文本高度+上间距+下间距
+
+fscaputre可以测量 
+
+4.6 文本属性总结 
+color 文本颜色 red 十六进制 rgb
+text-lign 文本对齐 设置文字水平对其的方式
+text-indent 文本缩进   em
+text-decoration 下划线 underline noe
+text-height 行高 
+
+5 CSS引入方式 
+5.1 根据CSS书写的位置，有CSS的三种样式表
+5.1.1行内样式表
+5.1.2内部样式表
+5.1.3外部样式表
+
+5.2 内部样式表
+把CSS写到了html页面内部，单独写到<style>标签中
+按道理style可以放在html里的任何一个地方一般放到head里，
+可以控制整个页面的元素样式设置
+代码结构非常清晰，没有实现结构和样式完全分离 使用嵌入式引入，是练习时使用的方式
+5.3 行内样式表
+适合于修改简单样式
+直接在标签内部style属性中设定CSS样式
+style其实就是标签属性 书写很繁琐  很少使用
+5.4 外部样式表
+使用最多 外部单独创建一个CSS文件中，之后吧CSS文件引入到HTML页面中使用
+引入外部样式表分两步
+1.新建一个后缀名为.css的文件 
+2.在HTML页面中，使用<link>标签引入这个文件
+<link rel="stylesheet href="css文件路径">
+样式表 rel表示当前文档与被连接文档之间的关系，这里需要指定为stylesheet,表示被链接的文档是一个样式表文件
+
+案例。两步
+搭建html结构页面
+修改css样式
+
+7.chrome调试工具
+7.1打开调试工具
+f12 右键，检查 
+element 两部分 一边html 一边css 
+1 ctrl+滚轮
+2 右边是css 可以看相应html的css属性
+调试之后可以复制回来
+3 ctrl+0是
+4 如果点击元素，发现右侧没有css，极有可能是类名或样式引入错误 黄色感叹号一定有问题
