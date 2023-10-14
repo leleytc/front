@@ -77,5 +77,13 @@ id选择器只能唯一，不会有重复的现象 开发类最多 js通常和id
 
 3. CSS字体属性
 CSS FONT 属性用于定义字体系列、大小
-3.1字体系列
+3.1 字体系列
 p{ font-family:"微软雅黑"}
+一般字体都放在body标签里面
+3.2 字体大小
+CSS使用font-size属性定义字体大小
+px 
+谷歌默认16px 给以给body指定整个页面文字的大小
+
+3.3 字体粗细
+font-weight normal bold 
